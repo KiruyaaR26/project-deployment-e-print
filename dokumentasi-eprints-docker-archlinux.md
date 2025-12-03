@@ -18,7 +18,7 @@ lalu buka https://github.com/DTLudlow/eprints-3.4.4-docker
 
 Dan clone repository tersebut dengan mengklik tombol hijau yang bertuliskan "code" lalu copy yang (HTTPS) 
 
-<img src="/project-deployment-e-print/img/Screenshot_20251203_180750.png" alt="github" width="500" height="600"> 
+<img src="/img/Screenshot_20251203_180750.png" alt="github" width="500" height="600"> 
  
 setelah itu masuk kedalam terminal lalu ketik
 
