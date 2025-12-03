@@ -2,7 +2,7 @@
 
 ### hal-hal yang harus disediakan sebelum menginstall
 1. laptop atau pc
-2. penyimpanan internal yang cukup 50gb maksimal
+2. penyimpanan internal yang cukup minimal 20GB hingga maksimal 50gb 
 3. flasdisk
 4. file arch-linux iso https://mirror.citrahost.com/archlinux/iso/2025.12.01/
 5. rufus https://rufus.ie/en/#google_vignette
