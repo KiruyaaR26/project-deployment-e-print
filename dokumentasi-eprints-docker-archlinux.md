@@ -14,7 +14,7 @@
 3. setelah itu klik kanan pada disk yang masih memiliki ruang untuk dijadikan partisi linux minimal 20GB
 4. lalu pilih srink volume dan atur menjadi 20GB atau 50GB tergantung sisa penyimpanan disk anda
 5. setelah itu sambungkan flasdisk ke laptop
-6. lalu buat boot table archlinux.iso kedalam flashdisk dengan menggunakan rufus (perlu diperhatikan jika patition scheme itu harus di singkronisasi dengan device kalian bisa MBR atau GPT) <img src="/img/" alt="github" width="500" height="600">
+6. lalu buat boot table archlinux.iso kedalam flashdisk dengan menggunakan rufus (perlu diperhatikan jika patition scheme itu harus di singkronisasi dengan device kalian bisa MBR atau GPT) <img src="/img/Screenshot_20251203_195736.png" alt="github" width="500" height="600">
 7. setelah itu restart laptop atau pc anda dan langsung masuk ke boot menu dengan menekan
    - Lenovo = F12
    - Acer   = F12
