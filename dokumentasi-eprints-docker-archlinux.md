@@ -68,7 +68,7 @@ cd eprints
 6. selanjutnya membuat container docker dengan mengetik
 
 ```sql
-docker compose up-build -d
+docker compose up -d
 ```
 
 Proses ini akan memakan waktu agak lama karena docker sedang membuat volume dan mengambil semua yang dibutuhkan EPrints untuk berjalan.
