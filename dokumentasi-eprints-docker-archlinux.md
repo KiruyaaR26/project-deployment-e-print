@@ -28,10 +28,19 @@
 ## Install e-prints di docker
 1. langkah pertama buka terminal lalu ketik
 
-```sql
-sudo pacman -Syu docker
 ```
-untuk memperbaharui sistem arch-linux sekaligus menginstall docker untuk e-prints
+sudo su
+```
+kemudian
+
+```sql
+pacman -Syu docker
+```
+untuk memperbaharui sistem arch-linux sekaligus menginstall docker untuk e-prints. jangan lupa nyalakan docker 
+
+```
+systemctl start docker
+```
 
 2. lalu buka https://github.com/DTLudlow/eprints-3.4.4-docker
 
@@ -53,7 +62,7 @@ mv  eprints-3.4.4-docker eprints
 5. lalu masuk kedalam folder e-prints menggunakan
 
 ```sql
-cd /home/eprints
+cd eprints
 ```
 
 6. selanjutnya membuat container docker dengan mengetik
