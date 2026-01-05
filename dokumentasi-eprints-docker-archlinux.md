@@ -148,7 +148,7 @@ cd /eprints
 4. setelah itu jalankan eprint dengan mengetik
 
 ```sql
-docker compose up -d
+docker compose up --build -d
 ```
 
 4. lalu buka browser dan buka http://localhost untuk melihat antarmuka front-end.
