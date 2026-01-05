@@ -45,13 +45,18 @@ Dan clone repository tersebut dengan mengklik tombol hijau yang bertuliskan "cod
 git clone https://github.com/DTLudlow/eprints-3.4.4-docker.git
 ```
 
-4. lalu masuk kedalam folder e-prints menggunakan
+4. kemudian mengubah nama directory
+```
+mv  eprints-3.4.4-docker eprints
+```
+   
+5. lalu masuk kedalam folder e-prints menggunakan
 
 ```sql
 cd /home/eprints
 ```
 
-5. selanjutnya membuat container docker dengan mengetik
+6. selanjutnya membuat container docker dengan mengetik
 
 ```sql
 docker compose up-build -d
@@ -59,13 +64,13 @@ docker compose up-build -d
 
 Proses ini akan memakan waktu agak lama karena docker sedang membuat volume dan mengambil semua yang dibutuhkan EPrints untuk berjalan.
 
-6. Untuk memastikan EPrints telah dikonfigurasi dengan benar, pastikan prompt terminal ada di folder eprints dengan cara buka kontainer docker di terminal lalu masukkan
+7. Untuk memastikan EPrints telah dikonfigurasi dengan benar, pastikan prompt terminal ada di folder eprints dengan cara buka kontainer docker di terminal lalu masukkan
 
 ```sql
 docker compose exec eprintshttpd sh
 ```
 
-7. lalu jalankan
+8. lalu jalankan
 
 ```sql
 chown -R c eprints.eprints /usr/share/eprints/
@@ -73,19 +78,19 @@ chown -R c eprints.eprints /usr/share/eprints/
 
 untuk memastikan bahwa pengguna eprints memiliki semua file di direktori eprints.
 
-8. lalu beralih ke pengguna eprints dengan
+9. lalu beralih ke pengguna eprints dengan
 ```sql
 su eprints
 ```
 
-9. setelah itu Jalankan
+10. setelah itu Jalankan
 ```sql
 /usr/share/eprints/bin/generate_st atic pub --prune
 ```
 
 untuk memastikan tidak ada tautan yang rusak.
 
-10. lalu jalankan
+11. lalu jalankan
 
 ```sql
 /usr/share/eprints/bin/epadmin update pub
@@ -93,7 +98,7 @@ untuk memastikan tidak ada tautan yang rusak.
 
 untuk memastikan pengguna admin ditambahkan ke database.
 
-11. selanjutnya jalankan
+12. selanjutnya jalankan
 
 ```sql
 /usr/share/eprints/bin/epadmin reload pub
@@ -101,7 +106,7 @@ untuk memastikan pengguna admin ditambahkan ke database.
 
 untuk memuat ulang konfigurasi arsip
 
-12. lalu ketik
+13. lalu ketik
 
 ```sql
 exit
@@ -109,7 +114,7 @@ exit
 
 untuk beralih ke pengguna root.
 
-13. jalankan
+14. jalankan
 
 ```sql
 httpd -k restart
@@ -131,7 +136,7 @@ service docker status
 cd /eprints
 ```
 
-3. setelah itu jalankan eprint dengan mengetik
+4. setelah itu jalankan eprint dengan mengetik
 
 ```sql
 docker compose up -d
